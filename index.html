@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="theme-color" content="#0a0a0a" />
+  <title>Open Leads — Links Oficiais</title>
+  <meta name="description" content="Open Leads — Agência Certificada Google Partner. Tráfego Pago, Google Ads e Meta Ads. Acesse todos os nossos canais e serviços." />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="pt_BR" />
+  <meta property="og:site_name" content="Open Leads" />
+  <meta property="og:title" content="Open Leads — Links Oficiais" />
+  <meta property="og:description" content="Agência Certificada Google Partner. Tráfego Pago, Google Ads e Meta Ads. Acesse todos os nossos canais." />
+  <meta property="og:url" content="https://links.openleads.com.br" />
+  <meta property="og:image" content="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/document-uploads/Logo-fundo-transparente-1766854878509.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;utf8,&lt;svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'&gt;&lt;rect width='100' height='100' rx='22' fill='%23FF5D0D'/&gt;&lt;text x='50' y='68' font-family='system-ui,sans-serif' font-size='62' font-weight='900' font-style='italic' text-anchor='middle' fill='white'&gt;O&lt;/text&gt;&lt;/svg&gt;" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --primary: #FF5D0D;
+      --primary-glow: rgba(255, 93, 13, 0.35);
+      --bg: #0a0a0a;
+      --bg-elev: #131313;
+      --surface: rgba(255, 255, 255, 0.04);
+      --surface-hover: rgba(255, 255, 255, 0.08);
+      --border: rgba(255, 255, 255, 0.08);
+      --border-hover: rgba(255, 93, 13, 0.5);
+      --text: #ffffff;
+      --text-muted: rgba(255, 255, 255, 0.55);
+      --text-subtle: rgba(255, 255, 255, 0.35);
+    }
+
+    html { -webkit-text-size-adjust: 100%; }
+
+    body {
+      font-family: 'Geist', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+      min-height: 100dvh;
+      line-height: 1.5;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      overflow-x: hidden;
+      position: relative;
+    }
+
+    /* Background ambient effects */
+    .bg-fx {
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      z-index: 0;
+      overflow: hidden;
+    }
+    .bg-fx::before, .bg-fx::after {
+      content: '';
+      position: absolute;
+      border-radius: 50%;
+      filter: blur(120px);
+      opacity: 0.6;
+    }
+    .bg-fx::before {
+      width: 500px; height: 500px;
+      background: var(--primary);
+      top: -150px; left: -100px;
+      opacity: 0.25;
+      animation: float 14s ease-in-out infinite;
+    }
+    .bg-fx::after {
+      width: 400px; height: 400px;
+      background: var(--primary);
+      bottom: -100px; right: -80px;
+      opacity: 0.18;
+      animation: float 18s ease-in-out infinite reverse;
+    }
+
+    .grain {
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      z-index: 1;
+      opacity: 0.04;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' /%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translate(0, 0) scale(1); }
+      50% { transform: translate(40px, 60px) scale(1.1); }
+    }
+
+    main {
+      position: relative;
+      z-index: 2;
+      max-width: 540px;
+      margin: 0 auto;
+      padding: 48px 22px 60px;
+      min-height: 100vh;
+      min-height: 100dvh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* Header */
+    .header {
+      text-align: center;
+      animation: fadeInDown 0.8s cubic-bezier(0.22, 1, 0.36, 1) both;
+    }
+
+    .logo-wrap {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 22px;
+      position: relative;
+    }
+
+    .logo-wrap::after {
+      content: '';
+      position: absolute;
+      inset: -20px;
+      background: radial-gradient(circle, var(--primary-glow) 0%, transparent 70%);
+      z-index: -1;
+      filter: blur(20px);
+      opacity: 0.6;
+    }
+
+    .logo {
+      height: 42px;
+      width: auto;
+      filter: brightness(0) invert(1);
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 7px 16px;
+      background: rgba(255, 93, 13, 0.08);
+      border: 1px solid rgba(255, 93, 13, 0.25);
+      border-radius: 999px;
+      font-size: 10px;
+      font-weight: 900;
+      letter-spacing: 0.18em;
+      color: var(--primary);
+      text-transform: uppercase;
+      margin-bottom: 20px;
+    }
+
+    .badge-dot {
+      width: 6px;
+      height: 6px;
+      background: var(--primary);
+      border-radius: 50%;
+      box-shadow: 0 0 10px var(--primary);
+      animation: pulse 2s ease-in-out infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.6; transform: scale(1.3); }
+    }
+
+    h1 {
+      font-size: 28px;
+      font-weight: 900;
+      font-style: italic;
+      text-transform: uppercase;
+      letter-spacing: -0.02em;
+      line-height: 1;
+      margin-bottom: 12px;
+    }
+
+    h1 .accent { color: var(--primary); }
+
+    .tagline {
+      font-size: 14px;
+      color: var(--text-muted);
+      max-width: 380px;
+      margin: 0 auto 28px;
+      line-height: 1.5;
+      font-weight: 400;
+    }
+
+    .tagline strong { color: var(--text); font-weight: 700; }
+
+    /* Social row */
+    .socials {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      margin-bottom: 36px;
+      animation: fadeInUp 0.8s 0.15s cubic-bezier(0.22, 1, 0.36, 1) both;
+    }
+
+    .social {
+      width: 44px;
+      height: 44px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 14px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      color: var(--text-muted);
+      transition: all 0.3s cubic-bezier(0.22, 1, 0.36, 1);
+      text-decoration: none;
+    }
+
+    .social:hover, .social:focus-visible {
+      background: var(--primary);
+      border-color: var(--primary);
+      color: #fff;
+      transform: translateY(-3px);
+      box-shadow: 0 10px 24px -8px var(--primary-glow);
+    }
+
+    .social svg { width: 18px; height: 18px; }
+
+    /* Section title */
+    .section-title {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 14px;
+      padding: 0 4px;
+    }
+
+    .section-title span {
+      font-size: 10px;
+      font-weight: 900;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--primary);
+      font-style: italic;
+    }
+
+    .section-title::after {
+      content: '';
+      flex: 1;
+      height: 1px;
+      background: linear-gradient(to right, var(--border), transparent);
+    }
+
+    /* Links */
+    .links {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-bottom: 28px;
+    }
+
+    .link {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      padding: 14px 16px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      color: var(--text);
+      text-decoration: none;
+      transition: all 0.3s cubic-bezier(0.22, 1, 0.36, 1);
+      position: relative;
+      overflow: hidden;
+      animation: fadeInUp 0.6s cubic-bezier(0.22, 1, 0.36, 1) both;
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+    }
+
+    .link:nth-child(1) { animation-delay: 0.20s; }
+    .link:nth-child(2) { animation-delay: 0.26s; }
+    .link:nth-child(3) { animation-delay: 0.32s; }
+    .link:nth-child(4) { animation-delay: 0.38s; }
+    .link:nth-child(5) { animation-delay: 0.44s; }
+    .link:nth-child(6) { animation-delay: 0.50s; }
+    .link:nth-child(7) { animation-delay: 0.56s; }
+
+    .link::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(135deg, rgba(255, 93, 13, 0.15), transparent 50%);
+      opacity: 0;
+      transition: opacity 0.4s;
+    }
+
+    .link:hover, .link:focus-visible {
+      border-color: var(--border-hover);
+      transform: translateY(-2px);
+      background: var(--surface-hover);
+      box-shadow: 0 12px 30px -10px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(255, 93, 13, 0.1);
+    }
+
+    .link:hover::before, .link:focus-visible::before { opacity: 1; }
+
+    .link:active { transform: translateY(0); }
+
+    .link-icon {
+      flex-shrink: 0;
+      width: 42px;
+      height: 42px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 12px;
+      background: rgba(255, 93, 13, 0.1);
+      color: var(--primary);
+      transition: all 0.3s;
+      position: relative;
+      z-index: 1;
+    }
+
+    .link:hover .link-icon {
+      background: var(--primary);
+      color: #fff;
+      transform: scale(1.05);
+    }
+
+    .link-icon svg { width: 20px; height: 20px; }
+
+    .link-text {
+      flex: 1;
+      min-width: 0;
+      position: relative;
+      z-index: 1;
+    }
+
+    .link-title {
+      font-size: 14px;
+      font-weight: 800;
+      font-style: italic;
+      text-transform: uppercase;
+      letter-spacing: 0.02em;
+      color: var(--text);
+      line-height: 1.2;
+      margin-bottom: 3px;
+    }
+
+    .link-desc {
+      font-size: 11px;
+      color: var(--text-muted);
+      font-weight: 400;
+      line-height: 1.3;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    .link-arrow {
+      flex-shrink: 0;
+      color: var(--text-subtle);
+      transition: all 0.3s;
+      position: relative;
+      z-index: 1;
+    }
+
+    .link:hover .link-arrow {
+      color: var(--primary);
+      transform: translateX(4px);
+    }
+
+    .link-arrow svg { width: 18px; height: 18px; }
+
+    /* Featured (WhatsApp) */
+    .link.featured {
+      background: linear-gradient(135deg, var(--primary), #ff7a3d);
+      border-color: transparent;
+      box-shadow: 0 14px 40px -10px var(--primary-glow);
+    }
+    .link.featured .link-icon { background: rgba(255, 255, 255, 0.2); color: #fff; }
+    .link.featured .link-title, .link.featured .link-desc { color: #fff; }
+    .link.featured .link-desc { opacity: 0.9; }
+    .link.featured .link-arrow { color: #fff; }
+    .link.featured:hover {
+      transform: translateY(-3px) scale(1.01);
+      box-shadow: 0 20px 50px -8px var(--primary-glow);
+      background: linear-gradient(135deg, #ff7a3d, var(--primary));
+    }
+    .link.featured:hover .link-icon { background: rgba(255, 255, 255, 0.3); transform: scale(1.05); }
+    .link.featured::before { display: none; }
+
+    /* Footer */
+    .foot {
+      margin-top: auto;
+      padding-top: 36px;
+      text-align: center;
+      animation: fadeIn 1s 0.7s both;
+    }
+
+    .foot-location {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 10px;
+      font-weight: 900;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--text-subtle);
+      margin-bottom: 14px;
+    }
+
+    .foot-location svg { width: 12px; height: 12px; color: var(--primary); }
+
+    .foot-cert {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 14px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      margin-bottom: 18px;
+    }
+
+    .foot-cert img { width: 14px; height: 14px; }
+
+    .foot-cert span {
+      font-size: 9px;
+      font-weight: 900;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+    }
+
+    .foot-copy {
+      font-size: 9px;
+      font-weight: 800;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      color: rgba(255, 255, 255, 0.2);
+    }
+
+    /* Animations */
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-16px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(16px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    /* Reduce motion */
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+      }
+    }
+
+    /* Larger screens */
+    @media (min-width: 600px) {
+      main { padding: 72px 22px 60px; }
+      .logo { height: 48px; }
+      h1 { font-size: 32px; }
+      .tagline { font-size: 15px; }
+      .link { padding: 16px 18px; }
+      .link-title { font-size: 15px; }
+      .link-desc { font-size: 12px; }
+    }
+
+    /* Focus visibility */
+    a:focus-visible, button:focus-visible {
+      outline: 2px solid var(--primary);
+      outline-offset: 3px;
+    }
+  </style>
+</head>
+<body>
+  <div class="bg-fx" aria-hidden="true"></div>
+  <div class="grain" aria-hidden="true"></div>
+
+  <main>
+    <header class="header">
+      <div class="logo-wrap">
+        <img
+          class="logo"
+          src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/document-uploads/Logo-fundo-transparente-1766854878509.png?width=800&height=200&resize=contain"
+          alt="Open Leads"
+          width="180"
+          height="42"
+        />
+      </div>
+
+      <div class="badge">
+        <span class="badge-dot"></span>
+        Google Partner Certificada
+      </div>
+
+      <h1>
+        Tráfego Pago<br />
+        <span class="accent">Que Gera Resultado</span>
+      </h1>
+
+      <p class="tagline">
+        Especialistas em <strong>Google Ads</strong> e <strong>Meta Ads</strong>.
+        Transformamos investimento em lucro real para o seu negócio.
+      </p>
+
+      <nav class="socials" aria-label="Redes sociais">
+        <a class="social" href="https://www.instagram.com/openleadsbrasil/" target="_blank" rel="noopener" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+        </a>
+        <a class="social" href="https://www.linkedin.com/company/openleads/" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+        </a>
+        <a class="social" href="https://www.youtube.com/@openleadsbrasil" target="_blank" rel="noopener" aria-label="YouTube">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"></path><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon></svg>
+        </a>
+        <a class="social" href="mailto:contato@openleads.com.br" aria-label="E-mail">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+        </a>
+      </nav>
+    </header>
+
+    <div class="section-title"><span>Fale Com a Gente</span></div>
+
+    <div class="links">
+      <a class="link featured" href="https://wa.me/5547984318458?text=Ol%C3%A1!%20Gostaria%20de%20falar%20com%20a%20Open%20Leads." target="_blank" rel="noopener">
+        <span class="link-icon">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.464 3.488"/></svg>
+        </span>
+        <div class="link-text">
+          <div class="link-title">WhatsApp Comercial</div>
+          <div class="link-desc">Fale agora com um consultor — (47) 98431-8458</div>
+        </div>
+        <span class="link-arrow">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+        </span>
+      </a>
+
+      <a class="link" href="https://openleads.com.br" target="_blank" rel="noopener">
+        <span class="link-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+        </span>
+        <div class="link-text">
+          <div class="link-title">Site Oficial</div>
+          <div class="link-desc">openleads.com.br</div>
+        </div>
+        <span class="link-arrow">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+        </span>
+      </a>
+    </div>
+
+    <div class="section-title"><span>Nossos Serviços</span></div>
+
+    <div class="links">
+      <a class="link" href="https://openleads.com.br/servicos" target="_blank" rel="noopener">
+        <span class="link-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg>
+        </span>
+        <div class="link-text">
+          <div class="link-title">Tráfego Pago Empresas</div>
+          <div class="link-desc">Google Ads + Meta Ads para vender mais</div>
+        </div>
+        <span class="link-arrow">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+        </span>
+      </a>
+
+      <a class="link" href="https://openleads.com.br/google-partner" target="_blank" rel="noopener">
+        <span class="link-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L9.5 8.5 2 9.5l5.5 5.5L6 22l6-3 6 3-1.5-7L22 9.5l-7.5-1z"></path></svg>
+        </span>
+        <div class="link-text">
+          <div class="link-title">Google Partner</div>
+          <div class="link-desc">Agência oficialmente certificada pelo Google</div>
+        </div>
+        <span class="link-arrow">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+        </span>
+      </a>
+
+      <a class="link" href="https://openleads.com.br/agenda" target="_blank" rel="noopener">
+        <span class="link-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+        </span>
+        <div class="link-text">
+          <div class="link-title">Agenda de Cursos</div>
+          <div class="link-desc">Treinamentos presenciais em Joinville</div>
+        </div>
+        <span class="link-arrow">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+        </span>
+      </a>
+
+      <a class="link" href="https://openleads.com.br/cursos" target="_blank" rel="noopener">
+        <span class="link-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path d="M6 12v5c3 3 9 3 12 0v-5"></path></svg>
+        </span>
+        <div class="link-text">
+          <div class="link-title">Cursos Online</div>
+          <div class="link-desc">Aprenda Tráfego Pago do zero ao avançado</div>
+        </div>
+        <span class="link-arrow">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+        </span>
+      </a>
+
+      <a class="link" href="https://openleads.com.br/blog" target="_blank" rel="noopener">
+        <span class="link-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+        </span>
+        <div class="link-text">
+          <div class="link-title">Blog & Conteúdos</div>
+          <div class="link-desc">Estratégias, cases e novidades de marketing</div>
+        </div>
+        <span class="link-arrow">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+        </span>
+      </a>
+    </div>
+
+    <footer class="foot">
+      <div class="foot-location">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+        Joinville · SC · Atendimento Nacional
+      </div>
+      <br />
+      <div class="foot-cert">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Google_Ads_logo.svg/1024px-Google_Ads_logo.svg.png" alt="Google Ads" width="14" height="14" />
+        <span>Google Partner</span>
+      </div>
+      <p class="foot-copy">© <span id="year"></span> Open Leads — Brasil</p>
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
