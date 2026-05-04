@@ -390,6 +390,166 @@
     .link.featured:hover .link-icon { background: rgba(255, 255, 255, 0.3); transform: scale(1.05); }
     .link.featured::before { display: none; }
 
+    /* Map CTA */
+    .map-cta {
+      margin-top: 8px;
+      margin-bottom: 36px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 22px;
+      overflow: hidden;
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      animation: fadeInUp 0.6s 0.6s cubic-bezier(0.22, 1, 0.36, 1) both;
+      transition: border-color 0.3s;
+    }
+    .map-cta:hover { border-color: var(--border-hover); }
+
+    .map-cta-content {
+      padding: 22px 20px 18px;
+      text-align: center;
+    }
+
+    .map-cta-eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 12px;
+      background: rgba(255, 93, 13, 0.08);
+      border: 1px solid rgba(255, 93, 13, 0.25);
+      border-radius: 999px;
+      font-size: 9px;
+      font-weight: 900;
+      letter-spacing: 0.18em;
+      color: var(--primary);
+      text-transform: uppercase;
+      margin-bottom: 14px;
+    }
+
+    .map-cta-eyebrow svg { width: 11px; height: 11px; }
+
+    .map-cta-title {
+      font-size: 22px;
+      font-weight: 900;
+      font-style: italic;
+      text-transform: uppercase;
+      letter-spacing: -0.02em;
+      line-height: 1;
+      margin-bottom: 10px;
+    }
+    .map-cta-title .accent { color: var(--primary); }
+
+    .map-cta-text {
+      font-size: 12px;
+      color: var(--text-muted);
+      line-height: 1.5;
+      max-width: 360px;
+      margin: 0 auto 18px;
+    }
+    .map-cta-text strong { color: var(--text); font-weight: 700; }
+
+    .map-cta-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 13px 22px;
+      background: var(--primary);
+      color: #fff;
+      border-radius: 14px;
+      font-size: 12px;
+      font-weight: 900;
+      font-style: italic;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      text-decoration: none;
+      transition: all 0.3s cubic-bezier(0.22, 1, 0.36, 1);
+      box-shadow: 0 10px 24px -8px var(--primary-glow);
+    }
+    .map-cta-btn:hover, .map-cta-btn:focus-visible {
+      background: #fff;
+      color: var(--primary);
+      transform: translateY(-2px);
+      box-shadow: 0 14px 30px -8px var(--primary-glow);
+    }
+    .map-cta-btn svg { width: 14px; height: 14px; transition: transform 0.3s; }
+    .map-cta-btn:hover svg { transform: translateX(3px); }
+
+    .map-frame {
+      position: relative;
+      height: 200px;
+      width: 100%;
+      border-top: 1px solid var(--border);
+    }
+    .map-frame iframe {
+      width: 100%;
+      height: 100%;
+      border: 0;
+      filter: grayscale(0.4) contrast(1.05) brightness(0.85);
+      transition: filter 0.4s;
+    }
+    .map-cta:hover .map-frame iframe { filter: grayscale(0) contrast(1) brightness(1); }
+
+    .map-pin {
+      position: absolute;
+      bottom: 14px;
+      left: 14px;
+      right: 14px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 12px 14px;
+      background: rgba(10, 10, 10, 0.85);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      pointer-events: none;
+    }
+    .map-pin-icon {
+      flex-shrink: 0;
+      width: 36px;
+      height: 36px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 10px;
+      background: rgba(255, 93, 13, 0.15);
+      color: var(--primary);
+    }
+    .map-pin-icon svg { width: 16px; height: 16px; }
+    .map-pin-text { flex: 1; min-width: 0; text-align: left; }
+    .map-pin-label {
+      font-size: 8px;
+      font-weight: 900;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--text-subtle);
+      margin-bottom: 2px;
+    }
+    .map-pin-addr {
+      font-size: 12px;
+      font-weight: 800;
+      color: var(--text);
+      line-height: 1.2;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    .map-pin-sub {
+      font-size: 9px;
+      color: var(--text-muted);
+      margin-top: 2px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    @media (min-width: 600px) {
+      .map-cta-title { font-size: 26px; }
+      .map-cta-text { font-size: 13px; }
+      .map-frame { height: 240px; }
+    }
+
     /* Footer */
     .foot {
       margin-top: auto;
@@ -614,6 +774,45 @@
         </span>
       </a>
     </div>
+
+    <section class="map-cta" aria-label="Visite nossa sede">
+      <div class="map-cta-content">
+        <div class="map-cta-eyebrow">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+          Sede Presencial · Joinville
+        </div>
+        <h2 class="map-cta-title">
+          Vamos tomar um café<br />
+          <span class="accent">e escalar seu negócio?</span>
+        </h2>
+        <p class="map-cta-text">
+          Visite nossa sede em <strong>Joinville</strong> ou agende uma <strong>consultoria online</strong>. Atendemos empresas em todo o Brasil.
+        </p>
+        <a class="map-cta-btn" href="https://wa.me/5547984318458?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20conversa%20com%20a%20Open%20Leads." target="_blank" rel="noopener">
+          Falar com Consultor
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+        </a>
+      </div>
+      <div class="map-frame">
+        <iframe
+          src="https://maps.google.com/maps?q=R.%20Dr.%20Jo%C3%A3o%20Colin,%201285,%20Joinville%20-%20SC&t=&z=15&ie=UTF8&iwloc=&output=embed"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="Open Leads — R. Dr. João Colin, 1285, Joinville - SC"
+          allowfullscreen
+        ></iframe>
+        <div class="map-pin">
+          <div class="map-pin-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+          </div>
+          <div class="map-pin-text">
+            <div class="map-pin-label">Nosso Endereço</div>
+            <div class="map-pin-addr">R. Dr. João Colin, 1285</div>
+            <div class="map-pin-sub">XYZ Coworking · Joinville — SC</div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <footer class="foot">
       <div class="foot-location">
